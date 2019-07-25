@@ -11,19 +11,19 @@ class BinarySearchTree:
       # go to the left
       # if nothing to the left, add it
       if not self.left:
-        return self.left = BinarySearchTree(value)
+        self.left = BinarySearchTree(value)
       else:
         # keep searching
-        return self.left.insert(value)
+        self.left.insert(value)
 
     else:
       # go to the right
       # if nothing to the right, add it:
       if not self.right:
-        return self.right = BinarySearchTree(value)
+        self.right = BinarySearchTree(value)
       else:
         # keep searching
-        return self.right.insert(value)
+        self.right.insert(value)
     
 
   def contains(self, target):
